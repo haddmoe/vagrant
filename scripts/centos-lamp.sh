@@ -28,7 +28,8 @@ systemctl start mariadb
 mysql -u root -e "SHOW DATABASES";
 
 # Download Starter Content
-
-
+cd /vagrant
+sudo -u vagrant wget -q https://raw.githubusercontent.com/haddmoe/vagrant/main/files/index.html
+sduo -u vagrant wget -q https://raw.githubusercontent.com/haddmoe/vagrant/main/files/info.php
 
 systemctl restart httpd
